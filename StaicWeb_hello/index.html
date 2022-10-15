@@ -3,26 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style type="text/css"></style>
+
+
+
+    <!--html样式表插入的方法（3种） （优先级：内联>内部>外部）-->
+
+    <!--（1）：style用来定义内部样式表(在head标签中、和内联样式不同的是，在这里定义标签的css样式控制的是整个页面的)-->
+    <style type="text/css">
+        body {
+            background-color: #ffc0cb;
+            background-size: cover
+        }
+        p {margin-left: 10px}
+    </style>
+    <!--（2）：link用来引用外部样式表（定义在head标签中）-->
+    <link rel="stylesheet" href="mycss.css">
+
+
+
+
 </head>
-<body bgcolor="#ffc0cb">
+<body>
 <!--这是单行注释-->
 
 <!--
 这是
 多行注释
 -->
-<p>p标签用来单独定义一行文字<br>
-    br换行后的第二行
-</p>
-<a href="http://www.baidu.com" target="_blank">baidu</a><br>
 
-<img alt="" height="200" src="images/50033321_p0.png" width="300">
+<!--标题共6个：h1-h6-->
 <h1 align="right">标题1</h1>
-<h2 class="c2">标题2</h2>
-<h3 id="i3">标题3</h3>
-<h4>标题4</h4>
-<h5>标题5</h5>
-<h6>标题6</h6>
+<h2 >标题2</h2>
+<h3 >标题3</h3>
+
+
+
+
+<p>
+    p标签用来单独定义一行文字<br>
+    <b>br换行后的第二行并且用b标签加粗</b><br>
+    <em>em标签定义斜体字并且朗读软件会重读</em><br>
+    <i>i标签只是单纯定义斜体字</i><br>
+    这段文字包含下标<sub>定义下标</sub> <br>
+    这段文字包含上标<sup>定义上标</sup><br>
+    <ins>定义插入字</ins><br>
+    <del>定义删除字</del>
+    <br>
+
+
+</p>
+
+<!--（3）：内联样式表（用来定义具体的某一个标签的css样式）-->
+<p style="color: aliceblue">这段话用内联样式表更改颜色</p>
+
+
+
+
+<!--测试外部样式表-->
+<p class="c1">这段话用外部样式表改了颜色并且指定了class</p>
+
+<p id="i1">这段话用外部样式表改了颜色并且指定了id</p>
+
+<p class="c1">这段话用外部样式表改了颜色并且指定了class</p>
+<p class="c1">这段话用外部样式表改了颜色并且指定了class</p>
+
+<h4>这个标题用外部样式表改了颜色没有指定任何选择器</h4>
+
+
+
+<a href="http://www.baidu.com" target="_blank">baidu</a><br>
+<img alt="" height="200" src="images/50033321_p0.png" width="300">
+
+
+
+
 </body>
 </html>
