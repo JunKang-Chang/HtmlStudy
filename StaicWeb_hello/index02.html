@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table
+        {
+            background-color: aqua;
+            border-style: dotted;
+            border-width: 2px;
+            text-align: center;
+            border-spacing:0;/*等同于html里的cellspacing，规定单元格和单元格之间的间隙，要设置0，不写的话系统默认加一定距离单元格会不齐*/
+            border-collapse:collapse;/*等同于html里的cellpadding，规定单元格边框和里面内容的间隙，collapse等于0*/
+
+
+        }
+    td
+    {
+        border-style:groove;
+        width: 100px;
+        height: 100px;
+    }
+
+    li
+    {
+        list-style: none;
+    }
+    </style>
+</head>
+<body>
+<table >
+
+    <caption>这是表格标题</caption>
+
+    <tr>
+        <th>表头1</th>
+        <th>表头2</th>
+        <th>表头3</th>
+    </tr>
+
+
+    <tr>
+        <td style="color: violet;" colspan="2" >合并了右1列</td>
+        <td >2</td>
+    </tr>
+
+
+
+
+
+    <tr>
+        <td colspan="3" >
+            <ul>
+                <li>ringo</li>
+                <li>ichigo</li>
+                <li>orenji</li>
+            </ul>
+        </td>
+
+    </tr>
+
+    <tr>
+        <td rowspan="2" >我合并了下一行</td>
+    </tr>
+
+    <tr>
+        <td>这是原本在下一行被合并到这一行的</td>
+        <td>这是原本在下一行被合并到这一行的</td>
+
+
+    </tr>
+
+
+
+
+</table>
+</body>
+</html>
