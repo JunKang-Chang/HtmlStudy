@@ -1,0 +1,8 @@
+#d1 h1,h2  /*h1,h2是div的子标签，表示仅应用于该标签*/
+{
+    color: aqua;
+}
+#s1
+{
+    color: pink;
+}
